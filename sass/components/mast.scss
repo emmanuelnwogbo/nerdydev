@@ -1,0 +1,62 @@
+.mast {
+
+
+  &--h1 {
+    position: relative;
+    margin-top: 9.5rem;
+
+    & span:nth-child(1) {
+      display: block;
+      position: relative;
+      width: 42rem;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 38rem;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        background: rgba(232, 67, 147, .9);
+        z-index: -1;
+      }
+    }
+
+    & span:nth-child(2) {
+      position: relative;
+      padding-bottom: 6rem;
+      display: block;
+      width: 68rem;
+
+      &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: .8rem;
+        background: rgba(232, 67, 147, .9);
+        width: 45rem;
+        height: .8rem;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        background: rgba(232, 67, 147, .9);
+        right: 0;
+        bottom: 43%;
+      }
+    }
+  }
+
+  &--name {
+    text-transform: uppercase;
+    font-weight: 450;
+    font-size: 12.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1;
+    color: $color-black;
+  }
+}

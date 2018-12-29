@@ -5,14 +5,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,450,500,700,900|Lato:100,300,400,500,700,900"
+    rel="stylesheet">
+  <title>nerdyemmanuel</title>
 </head>
 
 <body>
   <div id="particles-js"></div>
   <div id="particles-js--2"></div>
+  <input type="checkbox" class="sidenav--checkbox" id="sidenav--checkbox">
+  <input type="checkbox" class="contactform--checkbox" id="contactform--checkbox">
+  <div class="sidenav--overlay" id="sidenav--overlay"></div>
+  <form action="" class="contactform">
+    <h2 class="contactform--h2">contact me</h2>
+    <span class="contactform--area">
+      <!--<label for="name">Name</label>-->
+      <input class="contactform--input" name="name" id="name" type="text" placeholder="Name" required>
+    </span>
+    <span class="contactform--area">
+      <!--<label for="email">Email</label>-->
+      <input class="contactform--input" name="email" id="email" type="email" placeholder="Email" required>
+    </span>
+    <span class="contactform--area">
+      <!--<label for="subject">Subject</label>-->
+      <input class="contactform--input" name="subject" id="subject" type="text" placeholder="Subject" required>
+    </span>
+    <span class="contactform--area">
+      <textarea class="contactform--input" name="content" id="content" cols="30" rows="10" placeholder="What's up!"
+        required></textarea>
+      <!--<label for="content">What's up</label>-->
+    </span>
+    <span class="contactform--area contactform__btn--area">
+      <input type="submit" class="btn" value="send">
+      <button class="btn" id="form-close">close</button>
+    </span>
+  </form>
+  <div class="sidenav">
+    <span>
+      <p>my projects</p>
+    </span>
+    <span class="codepen-btn">
+      <p>my codepen</p>
+    </span>
+    <span class="contact-btn">
+      <p>contact me</p>
+    </span>
+  </div>
   <div class="container">
-
+    <div class="sidenav--icon" id="sidenav--icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="header">
+      <figure class="header--fig">
+        <img src="../img/intro__img.png" alt="me" class="header--img">
+      </figure>
+      <div class="header--top-menu">
+        <span>
+          <p>my projects</p>
+        </span>
+        <span class="codepen-btn">
+          <p>my codepen</p>
+        </span>
+        <span class="contact-btn">
+          <p>contact me</p>
+        </span>
+      </div>
+    </div>
+    <div class="mast">
+      <h1 class="mast--h1">
+        <span class="mast--name">nerdy</span>
+        <span class="mast--name">emmanuel</span>
+      </h1>
+    </div>
+    <div class="about">
+      <p>Hello! my name is Emmanuel. I'm a Fullstack Javascript Developer/Software Developer. My favorite
+        languages are Javascript, Python, and Ruby. I can use a bunch of frameworks and libraries like
+        React, Vue, Angular, Django, Node, Rails; including Css and preprocessors like Scss, Sass and Less.
+        I love to learn new things and solve problems!
+      </p>
+    </div>
+    <div class="socials">
+      <span>
+        <svg class="socials--icon">
+          <use xlink:href="../img/sprite.svg#icon-github"></use>
+        </svg>
+      </span>
+      <span>
+        <svg class="socials--icon">
+          <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+        </svg>
+      </span>
+      <span>
+        <svg class="socials--icon">
+          <use xlink:href="../img/sprite.svg#icon-instagram2"></use>
+        </svg>
+      </span>
+    </div>
   </div>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>

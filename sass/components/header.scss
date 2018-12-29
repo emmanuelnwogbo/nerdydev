@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &--fig {
+    height: 6rem;
+    width: 6rem;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+  }
+
+  &--img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &--top-menu {
+    display: flex;
+    justify-content: space-between;
+    color: $default-color;
+
+    @media only screen and (max-width: 64em) {
+      display: none;
+    }
+
+    & span {
+      position: relative;
+      display: inline-block;
+      margin: 0 2rem;
+      padding: 2rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 28%;
+        left: 0;
+        width: 8rem;
+        height: .2rem;
+        background: rgba(232, 67, 147, .9);
+      }
+    }
+  }
+}

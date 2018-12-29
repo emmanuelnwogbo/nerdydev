@@ -6,9 +6,52 @@
   box-sizing: inherit;
 }
 
+html {
+  font-size: 65.5%;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 60%;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 37%;
+  }
+
+  @media only screen and (max-width: 23.75em) {
+    font-size: 34%;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    font-size: 30%;
+  }
+
+  @media only screen and (max-width: 20em) {
+    font-size: 25%;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 75%;
+  }
+}
+
 body {
   box-sizing: border-box;
-  padding: 3rem;
+  padding: 1.5rem 19rem;
   overflow: hidden;
-  background: #f1f2f6;
+
+  @media only screen and (max-width: 64em) {
+    padding: 1.5rem 6rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 1.5rem 3rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 1.5rem 1rem;
+  }
 }
