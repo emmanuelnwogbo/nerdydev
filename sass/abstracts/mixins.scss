@@ -1,7 +1,0 @@
-@mixin sideNavItemReveal {
-  @for $i from 1 through 3 {
-    &:nth-child(#{$i}) {
-      transition: all .3s #{$i*.1}s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-  }
-}
